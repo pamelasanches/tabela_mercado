@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+     function afixar(loja){
+        valor = document.loja.VALOR.value;
+        valor1 = document.loja.VALOR1.value;
+        valor2 = document.loja.VALOR2.value;
+        valor3 = document.loja.VALOR3.value;
+        
+        var total = 0;
+        var divi = 0;
+        total = ((parseInt(valor)) + (parseInt(valor1)) + (parseInt(valor2)) + (parseInt(valor3)));
+         document.loja.loja.value = total;
+
+     }   
+
+
+    </script>
+</head>
+<body>
+    <form name="loja">
+    <table border="5">
+        <tr bgcolor="pink">
+
+
+ <table border="5">
+    <tr bgcolor="grey">
+        <td width="80" align="center">loja sanches</td>
+
+        
+        <td width="120" align="center"> Total :</td>
+        <td width="40" align="center">
+        <input type="text" name="loja" value="" disabled>    
+        </td>
+    </tr>
+    <tr bgcolor="grey">
+      <td width="80">nome do produto</td>
+      <td width="40" align="center" colspan="3">tamanho</td>
+      <td align="center">preço</td>  
+    </tr>
+
+    <tr bgcolor="black">
+<td width="80" align="center">
+    <input type="text" name="COD" value="">    
+</td>
+<td width="40" align="center" colspan="3">
+    <input type="text" name="DESC"value="" maxlength="180">
+</td>
+<td align="center">
+    <input type="text" name="VALOR" value=""> </td>
+    </tr>
+
+    <tr bgcolor="black">
+        <td width="80" align="center">
+            <input type="text" name="COD1" value="">    
+        </td>
+        <td width="40" align="center" colspan="3">
+            <input type="text" name="DESC1"value="" maxlength="180">
+        </td>
+        <td align="center">
+            <input type="text" name="VALOR1" value=""> </td>
+
+
+            <tr bgcolor="black">
+                <td width="80" align="center">
+                    <input type="text" name="COD2" value="">    
+                </td>
+                <td width="40" align="center" colspan="3">
+                    <input type="text" name="DESC2"value="" maxlength="180">
+                </td>
+                <td align="center">
+                    <input type="text" name="VALOR2" value=""> </td>
+            
+
+
+            <tr bgcolor="black">
+                <td width="80" align="center">
+                    <input type="text" name="COD3" value="">    
+                </td>
+                <td width="40" align="center" colspan="3">
+                    <input type="text" name="DESC3"value="" maxlength="180">
+                </td>
+                <td align="center">
+                    <input type="text" name="VALOR3" value=""> </td>
+                   
+                     </tr>
+                         <tr bgcolor="grey">
+                           <td width="80" align="center" colspan="5">
+                          <input type="button" name="botao" value="Calcular" 
+                          onClick="afixar(loja)">              
+                          </td> 
+                    
+
+ </table>   
+</form>
+</body>
+</html>
